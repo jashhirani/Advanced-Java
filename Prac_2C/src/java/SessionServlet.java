@@ -50,7 +50,7 @@ public class SessionServlet extends HttpServlet {
             }
 
             out.println("<h1>Session ID: " + sessionId + "</h1>");  
-            out.println("<h1>Session count: " + visitCount + "</h1>");
+            
             
             out.println("<a href=\"Page2\">Visit Page 2</a><br>");
             out.println("<a href=\"Page3\">Visit Page 3</a><br>");
