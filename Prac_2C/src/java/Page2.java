@@ -30,9 +30,7 @@ public class Page2 extends HttpServlet {
             out.println("<body>");
             HttpSession session = request.getSession(false);
             Integer visitCount = (Integer) session.getAttribute("visitCount");
-            if (visitCount == null) {
-                visitCount = 0;
-            }
+            
             visitCount++;
             session.setAttribute("visitCount", visitCount);
             String sessionId=(String) session.getAttribute("SessionId");
